@@ -1,0 +1,28 @@
+{
+  "name": "businesscard",
+  "version": "1.0.0",
+  "description": "Angular Business Card Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsmathews/businessCard.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "BusinessCard"
+  ],
+  "author": "Darrell Mathews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsmathews/businessCard/issues"
+  },
+  "homepage": "https://github.com/dsmathews/businessCard#readme",
+  "dependencies": {
+    "angular": "^1.7.6",
+    "express": "^4.16.4"
+  }
+}
