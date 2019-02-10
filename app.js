@@ -1,20 +1,16 @@
-const app = angular.module('addressBook',[]);
-// app.config(function ($routeProvider){
-//     $routeProvider
-//         .when('/',{
-//             controller:'simpleController',
-//             templateURL:'index.html'
-//         })
-//         // .when('/table',{
-//         //     controller:'simpleController',
-//         //     templateURL:'/app/views/table.html'
-//         // })
-//         // .when('/card',{
-//         //     controller:'simpleController',
-//         //     templateURL:'/app/views/cardpage.html'
-//         // })
-//         // .otherwise({redirectTo:'index.html'})
-// })
+const app = angular.module('addressBook',['ngRoute']);
+app.config(function ($routeProvider){
+    $routeProvider
+        .when('/table',{
+            controller:'simpleController',
+            templateURL:'/app/views/table.html'
+        })
+        .when('/cardpage',{
+            controller:'simpleController',
+            templateURL:'/app/views/cardpage.html'
+        })
+        .otherwise({redirectTo:'index.html'})
+})
 
 app.controller ('simpleController', 
 function ($scope) {

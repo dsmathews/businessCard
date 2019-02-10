@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dsmathews/businessCard#readme",
   "dependencies": {
     "angular": "^1.7.6",
+    "angular-route": "^1.7.7",
     "express": "^4.16.4"
   }
 }
