@@ -1,4 +1,6 @@
 <div class="container">
+    Contact Name&nbsp;<input type="text" data-ng-model="name" />
+    <br />
         <table class="table-responsive table-bordered table-hover">
             <thead>
                 <tr>
@@ -16,7 +18,7 @@
                 </tr>
             </thead>
             <tbody data-ng-controller="simpleController">
-                <tr data-ng-repeat="contact in contacts | orderBy: contact.CustomerID ">
+                <tr data-ng-repeat="contact in contacts| orderBy: contact.CustomerID | filter:name ">
                     <td>{{contact.CustomerID}}</td>
                     <td>{{contact.CompanyName}}</td>
                     <td>{{contact.ContactName}}</td>
