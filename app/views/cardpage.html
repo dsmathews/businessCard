@@ -1,0 +1,24 @@
+<div class="container">
+        <div  data-ng-repeat="contact in contacts | orderBy: contact.CustomerID " class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body text-primary">
+                  <h5 class="card-title">{{contact.ContactName}}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+        </div>
+            <tbody data-ng-controller="simpleController">
+                <tr data-ng-repeat="contact in contacts | orderBy: contact.CustomerID ">
+                    <td>{{contact.CustomerID}}</td>
+                    <td>{{contact.CompanyName}}</td>
+                    <td>{{contact.ContactName}}</td>
+                    <td>{{contact.ContactTitle}}</td>
+                    <td>{{contact.Address}}</td>
+                    <td>{{contact.City}}</td>
+                    <td>{{contact.Email}}</td>
+                    <td>{{contact.PostalCode}}</td>
+                    <td>{{contact.Country}}</td>
+                    <td>{{contact.Phone}}</td>
+                    <td>{{contact.Fax}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

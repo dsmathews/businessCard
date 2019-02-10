@@ -1,0 +1,34 @@
+<div class="container">
+        <table class="table-responsive table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>CustomerID</th>
+                    <th>Company Name</th>
+                    <th>Contact Name</th>
+                    <th>Contact Title</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Email</th>
+                    <th>Postal Code</th>
+                    <th>Country</th>
+                    <th>Phone</th>
+                    <th>Fax</th>
+                </tr>
+            </thead>
+            <tbody data-ng-controller="simpleController">
+                <tr data-ng-repeat="contact in contacts | orderBy: contact.CustomerID ">
+                    <td>{{contact.CustomerID}}</td>
+                    <td>{{contact.CompanyName}}</td>
+                    <td>{{contact.ContactName}}</td>
+                    <td>{{contact.ContactTitle}}</td>
+                    <td>{{contact.Address}}</td>
+                    <td>{{contact.City}}</td>
+                    <td>{{contact.Email}}</td>
+                    <td>{{contact.PostalCode}}</td>
+                    <td>{{contact.Country}}</td>
+                    <td>{{contact.Phone}}</td>
+                    <td>{{contact.Fax}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head data-ng-app="">
+<html lang="en" data-ng-app="addressBook">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.js'></script>
+    <title>Intelligent Rolodex</title>
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand" href="#">iRolodex</a>
+        <!-- <a class="text-white" href="app/views/table.html">Table</a>
+        <a class="text-white" href="app/views/cardpage.html">Card View</a> -->
+    </nav>
+    <br />
+    <div data-ng-controller="simpleController">
+        <div class="row">
+            <div class="col-4" data-ng-repeat="contact in contacts | orderBy: contact.CustomerID ">
+                <div class="card border-primary mb-3 ml-2 bg-dark" style="max-width: 18rem;">
+                    <div data-ng-controller="simpleController" class="card-body text-primary">
+                        <h5 class="card-title">{{contact.ContactName}}</h5>
+                        <h5 class="card-title">{{contact.ContactTitle}}</h5>
+                        <p class="card-text">Customer ID: {{contact.CustomerID}}</p>
+                        <p class="card-text">Company: {{contact.CompanyName}}</p>
+                        <p class="card-text">Address: {{contact.Address}}</p>
+                        <p class="card-text">{{contact.City}}, {{contact.PostalCode}}, {{contact.Country}}</p>
+                        <p class="card-text">Email:{{contact.Email}}</p>
+                        <p class="card-text">Phone:{{contact.Phone}}</p>
+                        <p class="card-text">Fax:{{contact.Fax}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
 </body>
+
 </html>
