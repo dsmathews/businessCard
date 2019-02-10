@@ -18,18 +18,18 @@
     <nav class="navbar navbar-light bg-primary">
         <a class="navbar-brand justify-content-center" href="index.html">iRolodex</a>
     </nav>
-    Views:
-    <ul>
-        <li><a href="#/cardpage">Card View</a></li>
-        <li><a href="#/table">Table</a></li>
-    </ul>
+    <p class="ml-3 mt-2">Views:
+        
+            <a href="#/cardpage"><button type="button" class="btn btn-primary btn-lg">Card View</button></a>
+            <a href="#/table"><button type="button" class="btn btn-primary btn-lg">Table View</button></a>
+    </p>
 
     <br />
     <div>
         <!-- Placeholder for Table View and Card View -->
         <div data-ng-view=""></div>
     </div>
-    
+
 
     <script src="app.js"></script>
     <script src="app/angular-route.js"></script>
