@@ -7,27 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.js'></script>
     <title>Intelligent Rolodex</title>
 </head>
 
 <body>
     <nav class="navbar navbar-light bg-primary">
-        <a class="navbar-brand" href="#">iRolodex</a>
+        <a class="navbar-brand" href="index.html">iRolodex</a>
     </nav>
     Views:
     <ul>
-        <li><a href="#!/cardpage">Card View</a></li>
-        <li><a href="#!/table">Table</a></li>
+        <li><a href="#/cardpage">Card View</a></li>
+        <li><a href="#/table">Table</a></li>
     </ul>
 
     <br />
-    <div class="container">
-        <div ng-view data-ng-controller="simpleController"></div>
+    <div>
+        <!-- Placeholder for Table View and Card View -->
+        <div data-ng-view=""></div>
     </div>
 
     <script src="app.js"></script>
-    <script src="app/controllers/controllers.js"></script>
     <script src="app/angular-route.js"></script>
 </body>
 

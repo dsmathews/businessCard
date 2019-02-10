@@ -1,3 +1,4 @@
+app = angular.module('addressBook');
 function simpleController ($scope) {
     $scope.contacts = [
         {
