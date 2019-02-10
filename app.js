@@ -1,15 +1,15 @@
 const app = angular.module('addressBook',['ngRoute']);
 app.config(function ($routeProvider, $locationProvider){
     $routeProvider
-        .when('/table',{
+        .when('/',{
             controller:'simpleController',
-            templateURL:"/app/"
+            templateURL:"/app/views/table.html"
         })
-        .when('/cardpage',{
-            controller:'simpleController',
-            templateURL:'/app/views/cardpage.html'
-        })
-        .otherwise({redirectTo:'index.html'});
+        // .when('/cardpage',{
+        //     controller:'simpleController',
+        //     templateURL:'/app/views/cardpage.html'
+        // })
+        // .otherwise({redirectTo:'index.html'});
 
         $locationProvider.hashPrefix('');
 })
