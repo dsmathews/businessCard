@@ -677,6 +677,7 @@ app.controller('simpleController',
             }
         ];
         $scope.addEntry = function () {
+            console.log($scope)
             $scope.contacts.push({
                 CustomerID: $scope.newEntry.CustomerID,
                 CompanyName: $scope.newEntry.CompanyName,
@@ -690,6 +691,7 @@ app.controller('simpleController',
                 Phone: $scope.newEntry.Phone,
                 Fax: $scope.newEntry.Fax
             })
+            $scope.contacts
         };
     }
 )
