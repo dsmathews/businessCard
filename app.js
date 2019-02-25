@@ -691,7 +691,6 @@ app.controller('simpleController',
                 Phone: $scope.newEntry.Phone,
                 Fax: $scope.newEntry.Fax
             })
-            $scope.contacts
         };
     }
 )
