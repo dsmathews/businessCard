@@ -9,10 +9,6 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: 'simpleController',
             templateUrl: '/app/views/cardpage.html'
         })
-        .when('/addUpdate', {
-            controller: 'simpleController',
-            templateUrl: '/app/views/addUpdate.html'
-        })
         .otherwise({ redirectTo: 'index.html' });
 
     $locationProvider.hashPrefix('');
@@ -676,21 +672,22 @@ app.controller('simpleController',
                 "Fax": "(02) 201 24 68"
             }
         ];
-        $scope.addEntry = function () {
-            console.log($scope)
-            $scope.contacts.push({
-                CustomerID: $scope.newEntry.CustomerID,
-                CompanyName: $scope.newEntry.CompanyName,
-                ContactName: $scope.newEntry.ContactName,
-                ContactTitle: $scope.newEntry.ContactTitle,
-                Address: $scope.newEntry.Address,
-                City: $scope.newEntry.City,
-                Email: $scope.newEntry.Email,
-                PostalCode: $scope.newEntry.PostalCode,
-                Country: $scope.newEntry.Country,
-                Phone: $scope.newEntry.Phone,
-                Fax: $scope.newEntry.Fax
-            })
-        };
+        // $scope.addEntry = function () {
+        //     console.log($scope)
+        //     $scope.contacts.push({
+        //         CustomerID: $scope.newEntry.CustomerID,
+        //         CompanyName: $scope.newEntry.CompanyName,
+        //         ContactName: $scope.newEntry.ContactName,
+        //         ContactTitle: $scope.newEntry.ContactTitle,
+        //         Address: $scope.newEntry.Address,
+        //         City: $scope.newEntry.City,
+        //         Email: $scope.newEntry.Email,
+        //         PostalCode: $scope.newEntry.PostalCode,
+        //         Country: $scope.newEntry.Country,
+        //         Phone: $scope.newEntry.Phone,
+        //         Fax: $scope.newEntry.Fax
+        //     })
+        //     $scope.newEntry = null;
+        // } 
     }
 )

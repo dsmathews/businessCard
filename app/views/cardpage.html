@@ -1,9 +1,9 @@
 <div class="container" data-ng-controller="simpleController">
-    Contact Name&nbsp;<input type="text" data-ng-model="name" />
+    Contact Name&nbsp;<input type="text" class="border border-primary" data-ng-model="name" />
     <br />
     <br />
     <div class="row">
-        <div class="col-4" data-ng-repeat="contact in contacts | orderBy: contact.CustomerID | filter:name ">
+        <div class="col-4-lg col-12-sm" data-ng-repeat="contact in contacts | orderBy: contact.CustomerID | filter:name ">
             <div class="card border-primary mb-3 ml-2 bg-dark shadow-lg rounded" style="max-width: 18rem;">
                 <div data-ng-controller="simpleController" class="card-body text-primary">
                     <h5 class="card-title">{{contact.ContactName}}</h5>
