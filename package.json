@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/dsmathews/businessCard#readme",
   "dependencies": {
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "angular-route": "^1.7.7",
     "bootstrap": "^4.3.1",
     "express": "^4.16.4"
